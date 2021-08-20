@@ -3,24 +3,20 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  margin: 32px 0;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  background-image: url("./img/geoform-banner.png");
+  background-size: cover;
+  min-height: 40vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: normal;
+  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
@@ -28,11 +24,47 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo-subtext{
+  width: 400px;
 }
+
+.version{
+  border-radius: 1.5rem;
+  border: 2px solid #86BA65;
+  padding: 2px 10px;
+  position: absolute;
+  top: 32px;
+  left: 30px;
+  height: 24px;
+}
+/* Form */
+
+.form-container{
+  background-color: #fff;
+  width: 524px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 32px;
+  margin: -55px auto 0 auto;
+}
+
+.question {
+  display: block;
+  font-size: 1.17em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+#form{width: inherit;}
+
+.form-heading{
+  color: var(--calcite-ui-text-1);
+  font-size: var(--calcite-font-size-2);
+  line-height: 1.375;
+  padding: 24px 0;
+  margin-top: 7px;
+}
+
+.medium {font-weight: var(--calcite-font-weight-medium);}
